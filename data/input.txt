@@ -3649,11 +3649,11 @@ words = {}
 File.open(File.expand_path("../shakespeare.txt", __FILE__), 'r').each do |line|
 	line.split.each do |word|
 		clean_word = word.downcase.gsub(/\W/, '')
-		
+
 		word_count = words[clean_word]
 		word_count = 0 if word_count == nil
 		word_count += 1
-		
+
 		words[clean_word] = word_count
 	end
 end
@@ -3669,7 +3669,7 @@ class WordCounter
 
 	def process(file_content)
 		@counts = Hash.new(0)
-		
+
 		file_content.each do |line|
 			line.split.each do |word|
 				@counts[word.downcase.gsub(/\W/, '')] += 1
@@ -7911,4 +7911,3 @@ Styling with Markdown is supported
     About
 
 Press h to open a hovercard with more details.
-
