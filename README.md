@@ -31,6 +31,13 @@ If you want to leverage your GPU for model training, refer to the
 [tensorflow-gpu documentation](https://www.tensorflow.org/install/gpu) for installation
 references. Setting up CUDA and cuDNN exceeds the scope of this Readme.
 
+#### Development
+
+This project uses the opinionated [black](https://github.com/psf/black) formatter, as well
+as some other pre-commit hooks that make life just a tad easier. To set both of these tools up
+in one go, run `pip install pre-commit && pre-commit install`. Now all changes will be
+formated on commit and you can focus on writing code.
+
 ### Training the model 📚
 
 This step **does not require any Twitter App to be setup**. To train the model, make
